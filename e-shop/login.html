@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Login/Signup</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="jumbotron jumbotron-fluid text-center" style="background-color:rgb(238, 160, 96)">
+            <img src="img/logo.png"><br><br>
+            <h1 style="color:brown; font-family: 'Courier New', Courier, monospace;">Login/Signup</h1>
+        </div>
+        
+        <div class="container" >
+                <div class="row">
+                        <div class="col-sm-6" style="border: black">
+                          <h3>Login</h3>
+                          <form>
+                                <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                </div>
+                                <div class="form-group">
+                                        <label for="pwd">Password:</label>
+                                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                                </div>
+                                <div class="checkbox">
+                                        <label><input type="checkbox" name="remember"> Remember me</label>
+                                </div>
+                                <button type="submit" class="btn btn-default" style="background-color:  rgb(238, 160, 96)">Submit</button>
+                          </form>
+                        </div>
+                        <div class="col-sm-6">
+                          <h3>Signup</h3>
+                          <form class="form-horizontal" action='' method="POST">
+                                <fieldset>
+                                  <div class="control-group">
+                                    <!-- Username -->
+                                    <label class="control-label"  for="username">Username</label>
+                                    <div class="controls">
+                                      <input type="text" id="username" name="username" placeholder="Enter Username" class="form-control">
+                                      <p class="help-block">Username can contain any letters or numbers, without spaces</p>
+                                    </div>
+                                  </div>
+                               
+                                  <div class="control-group">
+                                    <!-- E-mail -->
+                                    <label class="control-label" for="email">E-mail</label>
+                                    <div class="controls">
+                                      <input type="text" id="email" name="email" placeholder="Enter E-Mail" class="form-control">
+                                      <p class="help-block">Please provide your E-mail</p>
+                                    </div>
+                                  </div>
+                               
+                                  <div class="control-group">
+                                    <!-- Password-->
+                                    <label class="control-label" for="password">Password</label>
+                                    <div class="controls">
+                                      <input type="password" id="password" name="password" placeholder="Enter acceptable password" class="form-control">
+                                      <p class="help-block">Password should be at least 4 characters</p>
+                                    </div>
+                                  </div>
+                               
+                                  <div class="control-group">
+                                    <!-- Password -->
+                                    <label class="control-label"  for="password_confirm">Password (Confirm)</label>
+                                    <div class="controls">
+                                      <input type="password" id="password_confirm" name="password_confirm" placeholder="enter the password again" class="form-control">
+                                      <p class="help-block">Please confirm password</p>
+                                    </div>
+                                  </div>
+                               
+                                  <div class="control-group">
+                                    <!-- Button -->
+                                    <div class="controls">
+                                      <button class="btn btn-default" style="background-color: rgb(238, 160, 96)">Register</button>
+                                    </div>
+                                  </div>
+                                </fieldset>
+                              </form>
+                        </div>
+                </div> 
+        </div>
+    </body>
+</html>
